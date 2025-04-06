@@ -37,7 +37,8 @@ export default function CareersPage() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
-      setFormData(prev => ({ ...prev, resume: e.target.files?.[0] }))
+      const file = e.target.files[0];
+      setFormData(prev => ({ ...prev, resume: file }));
     }
   }
 
@@ -67,7 +68,7 @@ export default function CareersPage() {
         email: '',
         phone: '',
         position: '',
-        resume: null,
+        resume: null as File | null,
         coverLetter: '',
         availability: '',
         certified: false
