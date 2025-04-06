@@ -61,56 +61,74 @@ export default function PartnersPage() {
                 <li>• Experienced Sales Reps</li>
               </ul>
             </div>
-            <div className="bg-navy-dark p-8 rounded-xl border border-gray-800 flex flex-col justify-between transition-all duration-300 hover:border-green hover:shadow-[0_0_30px_rgba(126,211,33,0.15)] hover:-translate-y-1">
-              <h2 className="text-2xl font-bold text-green mb-4">Vendors</h2>
-              <p className="text-gray-300 mb-4">
-                Suppliers of energy-efficient products and solutions. Partner with us to provide 
-                high-quality equipment and materials to our customers.
+            <div className="bg-navy-dark p-8 rounded-xl border border-gray-800 flex flex-col justify-between transition-all duration-300 hover:border-teal hover:shadow-[0_0_30px_rgba(20,184,166,0.15)] hover:-translate-y-1">
+              <h2 className="text-2xl font-bold text-teal mb-4">Vendors</h2>
+              
+              <p className="text-gray-300 mb-6">
+                Suppliers of energy-efficient products and solutions. Partner with us to provide high-quality equipment and materials to our customers.
               </p>
-              <ul className="text-gray-300 space-y-2">
-                <li>• Equipment Manufacturers</li>
-                <li>• Material Suppliers</li>
-                <li>• Technology Providers</li>
+              
+              <ul className="space-y-3">
+                <li className="flex items-center text-gray-300">
+                  <span className="text-teal mr-2">•</span> Equipment Manufacturers
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <span className="text-teal mr-2">•</span> Material Suppliers
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <span className="text-teal mr-2">•</span> Technology Providers
+                </li>
               </ul>
             </div>
           </div>
 
-          {/* Benefits Section - Adjusted Layout */}
-          <div className="bg-navy-dark p-8 rounded-xl border border-gray-800 transition-all duration-300 hover:border-blue/50">
-            <h2 className="text-2xl font-bold text-blue text-center mb-12">
+          {/* Benefits Section - Enhanced with more visual appeal */}
+          <div className="bg-navy-dark p-10 rounded-xl border-2 border-blue/30 transition-all duration-300 hover:border-blue/70 shadow-lg">
+            <h2 className="text-3xl font-extrabold text-center mb-10 bg-gradient-to-r from-blue to-teal bg-clip-text text-transparent">
               Why Partner With Us?
             </h2>
             
-            {/* Added pl-12 for left padding and adjusted max-width */}
-            <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl mx-auto pl-12">
-              <div className="flex items-center space-x-4">
-                <span className="text-green text-xl">✓</span>
-                <p className="text-gray-300">Consistent project pipeline</p>
+            <div className="grid md:grid-cols-2 gap-x-16 gap-y-10 max-w-5xl mx-auto">
+              <div className="bg-navy/60 p-5 rounded-lg border border-blue/20 transform transition-all duration-300 hover:scale-105 hover:border-blue/50">
+                <div className="flex items-center space-x-4">
+                  <span className="text-blue text-2xl">✓</span>
+                  <p className="text-white font-semibold text-lg">Consistent project pipeline</p>
+                </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <span className="text-green text-xl">✓</span>
-                <p className="text-gray-300">Long-term growth potential</p>
+              <div className="bg-navy/60 p-5 rounded-lg border border-blue/20 transform transition-all duration-300 hover:scale-105 hover:border-blue/50">
+                <div className="flex items-center space-x-4">
+                  <span className="text-blue text-2xl">✓</span>
+                  <p className="text-white font-semibold text-lg">Long-term growth potential</p>
+                </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <span className="text-green text-xl">✓</span>
-                <p className="text-gray-300">Competitive compensation</p>
+              <div className="bg-navy/60 p-5 rounded-lg border border-blue/20 transform transition-all duration-300 hover:scale-105 hover:border-blue/50">
+                <div className="flex items-center space-x-4">
+                  <span className="text-blue text-2xl">✓</span>
+                  <p className="text-white font-semibold text-lg">Competitive compensation</p>
+                </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <span className="text-green text-xl">✓</span>
-                <p className="text-gray-300">Support from our experienced team</p>
+              <div className="bg-navy/60 p-5 rounded-lg border border-blue/20 transform transition-all duration-300 hover:scale-105 hover:border-blue/50">
+                <div className="flex items-center space-x-4">
+                  <span className="text-blue text-2xl">✓</span>
+                  <p className="text-white font-semibold text-lg">Support from our experienced team</p>
+                </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <span className="text-green text-xl">✓</span>
-                <p className="text-gray-300">Professional development opportunities</p>
+              <div className="bg-navy/60 p-5 rounded-lg border border-blue/20 transform transition-all duration-300 hover:scale-105 hover:border-blue/50">
+                <div className="flex items-center space-x-4">
+                  <span className="text-blue text-2xl">✓</span>
+                  <p className="text-white font-semibold text-lg">Professional development opportunities</p>
+                </div>
               </div>
               
-              <div className="flex items-center space-x-4">
-                <span className="text-green text-xl">✓</span>
-                <p className="text-gray-300">Access to utility program resources</p>
+              <div className="bg-navy/60 p-5 rounded-lg border border-blue/20 transform transition-all duration-300 hover:scale-105 hover:border-blue/50">
+                <div className="flex items-center space-x-4">
+                  <span className="text-blue text-2xl">✓</span>
+                  <p className="text-white font-semibold text-lg">Access to utility program resources</p>
+                </div>
               </div>
             </div>
           </div>

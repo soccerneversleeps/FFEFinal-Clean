@@ -17,6 +17,9 @@ export default function LandingPage() {
         <CommercialSection />
         <TestimonialsSection />
         <CTASection />
+        <section id="direct-install" className="...">
+          {/* Direct Install content */}
+        </section>
       </main>
     </div>
   )

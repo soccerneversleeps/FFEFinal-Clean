@@ -71,48 +71,8 @@ export default function ContactPage() {
         
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
         
-        <div className="grid md:grid-cols-2 gap-12 mt-12">
-          <div className="bg-navy-dark p-8 rounded-xl">
-            <h2 className="text-2xl font-bold mb-6">Our Office</h2>
-            
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <MapPin className="h-6 w-6 text-orange flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-400">5501 Ripple Cove Way</p>
-                  <p className="text-gray-400">Bakersfield, CA 93313</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <Clock className="h-6 w-6 text-orange flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold">Hours of Operation</h3>
-                  <p className="text-gray-400">Monday - Saturday: 8:00AM - 6:00PM PST</p>
-                  <p className="text-gray-400">Sunday: Closed</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <Phone className="h-6 w-6 text-orange flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-400">Office: (661) 751-5010</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <Mail className="h-6 w-6 text-orange flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-400">familyfirstenergy@outlook.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-navy-dark p-8 rounded-xl">
+        <div className="flex flex-col md:flex-row gap-12 mt-12">
+          <div className="md:w-[65%] bg-navy-dark p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-6">Organization Partnership Inquiry</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -202,6 +162,46 @@ export default function ContactPage() {
                 Send Message
               </Button>
             </form>
+          </div>
+          
+          <div className="md:w-[35%] bg-navy-dark p-8 rounded-xl">
+            <h2 className="text-2xl font-bold mb-6">Our Office</h2>
+            
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <MapPin className="h-6 w-6 text-orange flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold">Address</h3>
+                  <p className="text-gray-400">5501 Ripple Cove Way</p>
+                  <p className="text-gray-400">Bakersfield, CA 93313</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <Clock className="h-6 w-6 text-orange flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold">Hours of Operation</h3>
+                  <p className="text-gray-400">Monday - Saturday: 8:00AM - 6:00PM PST</p>
+                  <p className="text-gray-400">Sunday: Closed</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <Phone className="h-6 w-6 text-orange flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold">Phone</h3>
+                  <p className="text-gray-400">Office: (661) 751-5010</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <Mail className="h-6 w-6 text-orange flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-semibold">Email</h3>
+                  <p className="text-gray-400">familyfirstenergy@outlook.com</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
