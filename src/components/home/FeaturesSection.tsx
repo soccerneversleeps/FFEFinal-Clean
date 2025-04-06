@@ -1,5 +1,7 @@
 import { Zap, Lightbulb, Battery, BarChart3 } from 'lucide-react'
 import EnergyTip from "@/components/shared/EnergyTip"
+import Link from "next/link"
+import styles from './FeaturesSection.module.css'
 
 export default function FeaturesSection() {
   return (
@@ -10,33 +12,41 @@ export default function FeaturesSection() {
           <EnergyTip>Together, we've reduced CO2 emissions by 50,000 tons</EnergyTip>
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-navy-dark p-8 rounded-xl border border-gray-800 transition-all duration-300 hover:bg-navy-dark/80 hover:border-blue hover:shadow-[0_0_30px_rgba(0,149,255,0.3)] group">
-            <div className="h-12 w-12 rounded-full bg-blue/20 flex items-center justify-center mb-6 group-hover:bg-blue/40">
-              <Zap className="h-6 w-6 text-blue" />
+          <Link href="/services/outreach-assistance" className="block h-full">
+            <div className="bg-navy-dark p-8 rounded-xl border border-gray-800 transition-all duration-300 hover:bg-navy-dark/80 hover:border-blue hover:shadow-[0_0_30px_rgba(0,149,255,0.3)] group h-full flex flex-col">
+              <div className="h-12 w-12 rounded-full bg-blue/20 flex items-center justify-center mb-6 group-hover:bg-blue/40">
+                <Zap className="h-6 w-6 text-blue" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Outreach Assistance</h3>
+              <p className="text-gray-300">
+                Family First Energy creates custom outreach strategies to help utilities, implementers, and contractors meet their contractual goals. With over 30 years of experience in utility program outreach, we drive engagement, increase participation, and ensure compliance. Partner with us to enhance your reach and maximize program success.
+              </p>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Outreach Assistance</h3>
-            <p className="text-gray-300">
-              Family First Energy creates custom outreach strategies to help utilities, implementers, and contractors meet their contractual goals. With over 30 years of experience in utility program outreach, we drive engagement, increase participation, and ensure compliance. Partner with us to enhance your reach and maximize program success.
-            </p>
-          </div>
-          <div className="bg-navy-dark p-8 rounded-xl border border-gray-800 transition-all duration-300 hover:bg-navy-dark/80 hover:border-orange hover:shadow-[0_0_30px_rgba(255,92,0,0.3)] group">
-            <div className="h-12 w-12 rounded-full bg-orange/20 flex items-center justify-center mb-6 group-hover:bg-orange/40">
-              <Lightbulb className="h-6 w-6 text-orange" />
+          </Link>
+          
+          <Link href="/services/direct-install" className="block h-full">
+            <div className="bg-navy-dark p-8 rounded-xl border border-gray-800 transition-all duration-300 hover:bg-navy-dark/80 hover:border-orange hover:shadow-[0_0_30px_rgba(255,92,0,0.3)] group h-full flex flex-col">
+              <div className="h-12 w-12 rounded-full bg-orange/20 flex items-center justify-center mb-6 group-hover:bg-orange/40">
+                <Lightbulb className="h-6 w-6 text-orange" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Direct Install</h3>
+              <p className="text-gray-300">
+                Family First Energy delivers expert installation of energy efficiency measures with General B, C36, and C20 licenses. With over 20 years of experience, we handle everything from start to finish—staying ahead of new technologies, ensuring full compliance, and training our team to the highest standards. Partner with us for seamless, high-quality installations that meet every requirement.
+              </p>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Direct Install</h3>
-            <p className="text-gray-300">
-              Family First Energy delivers expert installation of energy efficiency measures with General B, C36, and C20 licenses. With over 20 years of experience, we handle everything from start to finish—staying ahead of new technologies, ensuring full compliance, and training our team to the highest standards. Partner with us for seamless, high-quality installations that meet every requirement.
-            </p>
-          </div>
-          <div className="bg-navy-dark p-8 rounded-xl border border-gray-800 transition-all duration-300 hover:bg-navy-dark/80 hover:border-green hover:shadow-[0_0_30px_rgba(34,197,94,0.3)] group">
-            <div className="h-12 w-12 rounded-full bg-green/20 flex items-center justify-center mb-6 group-hover:bg-green/40">
-              <BarChart3 className="h-6 w-6 text-green" />
+          </Link>
+          
+          <Link href="/services/program-design" className="block h-full">
+            <div className={`bg-navy-dark p-8 rounded-xl border border-gray-800 transition-all duration-300 hover:bg-navy-dark/80 group h-full flex flex-col ${styles.programDesignBox}`}>
+              <div className="h-12 w-12 rounded-full bg-green/20 flex items-center justify-center mb-6 group-hover:bg-green/40">
+                <BarChart3 className="h-6 w-6 text-green" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Program Design</h3>
+              <p className="text-gray-300">
+                Family First Energy partners with utilities and implementers to develop high-impact, cost-effective programs that meet both energy and equity goals. We specialize in creating strategies for disadvantaged communities and hard-to-reach zones throughout California. Our expertise helps you design measurable programs that maximize efficiency while ensuring no community is left behind.
+              </p>
             </div>
-            <h3 className="text-2xl font-bold mb-4">Program Design</h3>
-            <p className="text-gray-300">
-              Family First Energy partners with utilities and implementers to develop high-impact, cost-effective programs. With deep expertise in utility initiatives, we analyze your goals and provide proven strategies to maximize efficiency and results. Let us help you design smarter programs that deliver measurable success.
-            </p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
@@ -64,4 +74,11 @@ function FeatureCard({ icon, title, description, impact, color }: FeatureCardPro
       </div>
     </div>
   )
-} 
+}
+
+<style jsx>{`
+  .program-design-link:hover > div {
+    border-color: rgb(34, 197, 94) !important;
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.3) !important;
+  }
+`}</style> 

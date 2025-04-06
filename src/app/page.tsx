@@ -6,6 +6,7 @@ import ResidentialSection from "@/components/home/ResidentialSection"
 import CommercialSection from "@/components/home/CommercialSection"
 import TestimonialsSection from "@/components/home/TestimonialsSection"
 import CTASection from "@/components/home/CTASection"
+import Link from "next/link"
 
 export default function LandingPage() {
   return (
@@ -17,9 +18,6 @@ export default function LandingPage() {
         <CommercialSection />
         <TestimonialsSection />
         <CTASection />
-        <section id="direct-install" className="...">
-          {/* Direct Install content */}
-        </section>
       </main>
     </div>
   )

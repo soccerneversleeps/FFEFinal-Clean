@@ -22,8 +22,8 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/partners" className="text-gray-400 hover:text-white transition-colors">
-                    Partners
+                  <Link href="/active-partners" className="text-gray-400 hover:text-white transition-colors">
+                    Active Partners
                   </Link>
                 </li>
                 <li>

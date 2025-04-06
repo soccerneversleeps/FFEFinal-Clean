@@ -36,7 +36,7 @@ export default function HeroSection() {
             className="border-blue text-blue hover:bg-blue/10 transition-all duration-300"
             asChild
           >
-            <Link href="/partners">
+            <Link href="/active-partners">
               Active Partners
             </Link>
           </Button>
