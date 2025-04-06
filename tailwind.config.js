@@ -9,14 +9,18 @@ module.exports = {
     extend: {
       colors: {
         navy: {
-          DEFAULT: '#0a192f',
-          dark: '#061120',
+          DEFAULT: '#0A1929',
+          dark: '#061220',
+          light: '#0F2942',
         },
         blue: {
-          DEFAULT: '#0096FF',
+          DEFAULT: '#0095FF',
         },
         orange: {
-          DEFAULT: '#FF5500',
+          DEFAULT: '#FF5C00',
+        },
+        green: {
+          DEFAULT: '#22C55E',
         },
         teal: {
           DEFAULT: '#00B5AD',
