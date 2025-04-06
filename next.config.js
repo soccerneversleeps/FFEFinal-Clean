@@ -14,23 +14,10 @@ const nextConfig = {
     reactRemoveProperties: process.env.NODE_ENV === 'production',
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'example.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'another-domain.com',
-        pathname: '/**',
-      },
-    ],
+    domains: [],
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [],
+    unoptimized: true, // Try this if optimization is causing issues
   },
 }
 
