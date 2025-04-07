@@ -15,17 +15,41 @@ export default function ContactPage() {
     programType: "",
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState("")
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    setIsSubmitted(true)
-    // In a real implementation, you would send this data to your server
+    setIsSubmitting(true)
+    setError("")
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+      
+      const data = await response.json()
+      
+      if (data.success) {
+        setIsSubmitted(true)
+      } else {
+        setError(data.message || "Something went wrong. Please try again.")
+      }
+    } catch (err) {
+      setError("Failed to submit the form. Please try again.")
+      console.error("Form submission error:", err)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const programTypes = [
@@ -74,6 +98,12 @@ export default function ContactPage() {
         <div className="flex flex-col md:flex-row gap-12 mt-12">
           <div className="md:w-[65%] bg-navy-dark p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-6">Organization Partnership Inquiry</h2>
+            
+            {error && (
+              <div className="bg-red-900/30 border border-red-500 text-white px-4 py-3 rounded mb-6">
+                {error}
+              </div>
+            )}
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -157,9 +187,10 @@ export default function ContactPage() {
               
               <Button 
                 type="submit"
+                disabled={isSubmitting}
                 className="w-full bg-orange hover:bg-orange/90 text-white py-3 transition-all duration-300"
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
