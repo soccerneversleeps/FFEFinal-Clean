@@ -91,7 +91,7 @@ export default function DirectInstallPage() {
               className="bg-orange hover:bg-orange/90 text-white py-6 px-8 text-lg transition-all duration-300"
               asChild
             >
-              <Link href="/contact">Request a Quote</Link>
+              <Link href="/contact">Get Started</Link>
             </Button>
           </div>
         </div>

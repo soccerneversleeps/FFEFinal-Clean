@@ -14,11 +14,10 @@ const nextConfig = {
     reactRemoveProperties: process.env.NODE_ENV === 'production',
   },
   images: {
-    domains: [],
-    formats: ['image/avif', 'image/webp'],
-    remotePatterns: [],
-    unoptimized: true, // Try this if optimization is causing issues
+    unoptimized: true, // Disable Next.js image optimization
   },
+  // Add this to ensure all assets in public are included
+  assetPrefix: '',
 }
 
 module.exports = nextConfig 
