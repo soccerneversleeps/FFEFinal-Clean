@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
-import sgMail from '@sendgrid/mail';
+// import sgMail from '@sendgrid/mail';
 
 // Set your SendGrid API key
-if (process.env.SENDGRID_API_KEY) {
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-} else {
-  console.error('SENDGRID_API_KEY is not defined');
-}
+// if (process.env.SENDGRID_API_KEY) {
+//   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// } else {
+//   console.error('SENDGRID_API_KEY is not defined');
+// }
 
 export async function POST(request: Request) {
   try {
@@ -32,11 +32,19 @@ export async function POST(request: Request) {
       <h3>Message:</h3>
       <p>${formData.message}</p>
     `;
+
+    // Temporarily return success without sending email
+    return NextResponse.json({ 
+      success: true, 
+      message: 'Form submission received' 
+    });
     
+    // Email functionality commented out for now
+    /*
     // Email options
     const msg = {
       to: process.env.EMAIL_RECIPIENT || 'connect@familyfirstenergy.com',
-      from: process.env.SENDGRID_VERIFIED_SENDER || 'connect@familyfirstenergy.com', // This must be a verified sender in SendGrid
+      from: process.env.SENDGRID_VERIFIED_SENDER || 'connect@familyfirstenergy.com',
       subject: `New Contact Form: ${formData.name} from ${formData.utilityName}`,
       html: emailContent,
       replyTo: formData.email,
@@ -73,12 +81,13 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+    */
   } catch (error: any) {
     console.error('Error in contact API route:', error);
     return NextResponse.json(
       { 
         success: false, 
-        message: 'Failed to send email',
+        message: 'Failed to process form submission',
         details: error.message 
       },
       { status: 500 }
