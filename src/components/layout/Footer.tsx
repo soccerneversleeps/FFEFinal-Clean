@@ -11,14 +11,6 @@ export default function Footer() {
             <p className="text-gray-400 mb-6">
               Dedicated to helping California families and businesses live comfortably while reducing energy costs through innovative solutions.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=61561829835874" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                <Facebook size={20} />
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=61561829835874" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-                <Linkedin size={20} />
-              </a>
-            </div>
           </div>
           
           <div className="flex flex-col items-center">
@@ -80,14 +72,22 @@ export default function Footer() {
               </div>
               <div className="flex items-center justify-center">
                 <Phone className="text-blue mr-2 flex-shrink-0" size={18} />
-                <a href="tel:+16617505010" className="text-gray-400 hover:text-white transition-colors">
-                  (661) 750-5010
+                <a href="tel:+16617515010" className="text-gray-400 hover:text-white transition-colors">
+                  (661) 751-5010
                 </a>
               </div>
               <div className="flex items-center justify-center">
                 <Mail className="text-blue mr-2 flex-shrink-0" size={18} />
-                <a href="mailto:familyfirstenergy@outlook.com" className="text-gray-400 hover:text-white transition-colors">
-                  familyfirstenergy@outlook.com
+                <a href="mailto:connect@familyfirstenergy.com" className="text-gray-400 hover:text-white transition-colors">
+                  connect@familyfirstenergy.com
+                </a>
+              </div>
+              <div className="flex space-x-4 justify-center mt-4">
+                <a href="https://www.facebook.com/profile.php?id=61561829835874" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                  <Facebook size={20} />
+                </a>
+                <a href="https://www.linkedin.com/company/103027211/" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                  <Linkedin size={20} />
                 </a>
               </div>
             </div>

@@ -90,7 +90,9 @@ export default function OutreachAssistancePage() {
               className="bg-orange hover:bg-orange/90 text-white py-6 px-8 text-lg transition-all duration-300"
               asChild
             >
-              <Link href="/contact">Schedule a Consultation</Link>
+              <a href="https://calendar.app.google/QqjdNVMvsbCMAw6m7" target="_blank" rel="noopener noreferrer">
+                Schedule a Consultation
+              </a>
             </Button>
           </div>
         </div>

@@ -22,8 +22,8 @@ export default function CTASection() {
             variant="outline"
             className="border-blue text-blue hover:bg-blue/10 px-8 py-6 text-lg transition-all duration-300 transform hover:scale-105"
             onClick={() => {
-              // This will be replaced with the Calendly link when provided
-              window.open("YOUR_CALENDLY_LINK_HERE", "_blank");
+              // Open the Google Calendar scheduling page
+              window.open("https://calendar.app.google/QqjdNVMvsbCMAw6m7", "_blank");
             }}
           >
             Schedule a Consultation

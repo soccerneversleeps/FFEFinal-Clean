@@ -15,10 +15,9 @@ export default function TestimonialsSection() {
               Their outreach efforts have significantly increased customer participation."
             </p>
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-gray-700 rounded-full mr-4"></div>
               <div>
-                <h4 className="font-semibold">Kenny Lazaro</h4>
-                <p className="text-gray-400 text-sm">Program Manager, Resource Innovation</p>
+                <h4 className="font-semibold">David Reyes</h4>
+                <p className="text-gray-400 text-sm">CEO, Reliable Energy</p>
               </div>
             </div>
           </div>
@@ -30,7 +29,6 @@ export default function TestimonialsSection() {
               They've helped us connect with hard-to-reach communities with impressive results."
             </p>
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-gray-700 rounded-full mr-4"></div>
               <div>
                 <h4 className="font-semibold">Gabriel Peredo</h4>
                 <p className="text-gray-400 text-sm">Senior Director, RHA Inc.</p>
