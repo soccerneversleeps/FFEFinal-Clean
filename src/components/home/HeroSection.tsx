@@ -8,9 +8,6 @@ import EnergyTip from "@/components/shared/EnergyTip"
 export default function HeroSection() {
   return (
     <section className="container mx-auto px-4 pt-4 pb-20 md:py-20 flex flex-col md:flex-row items-center gap-12">
-      <div className="w-full flex justify-center mb-12 md:hidden">
-        <Logo />
-      </div>
       <div className="flex-1 space-y-6">
         <div className="relative">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
