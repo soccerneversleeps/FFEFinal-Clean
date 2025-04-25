@@ -16,10 +16,10 @@ export default function Logo({ size }: LogoProps = {}) {
       <Image
         src="/images/partners/FullLogo_Transparent_NoBuffer (1).png"
         alt="Family First Energy Logo"
-        width={28}
-        height={28}
-        className="w-auto h-[1em]"
-        style={{ maxHeight: size ? `${size}px` : '28px' }}
+        width={34}
+        height={34}
+        className="w-auto h-[1.2em]"
+        style={{ maxHeight: size ? `${size * 1.2}px` : '34px' }}
       />
       Family First Energy
     </Link>
