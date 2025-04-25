@@ -14,7 +14,7 @@ export default function Logo({ size }: LogoProps = {}) {
       }`}
     >
       <Image
-        src="/images/@FullLogo_Transparent_NoBuffer (1).png"
+        src="/images/partners/FullLogo_Transparent_NoBuffer (1).png"
         alt="Family First Energy Logo"
         width={32}
         height={32}
