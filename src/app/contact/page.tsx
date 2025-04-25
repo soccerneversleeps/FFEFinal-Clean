@@ -13,6 +13,7 @@ export default function ContactPage() {
     message: "",
     utilityName: "",
     programType: "",
+    smsConsent: false
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -183,6 +184,24 @@ export default function ContactPage() {
                   className="w-full bg-navy border border-gray-700 rounded-md px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue"
                   placeholder="Please share details about your program goals, target audience, timeline, and any specific requirements. We're interested in learning how we can help you meet your energy efficiency targets."
                 />
+              </div>
+
+              <div className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="smsConsent"
+                  name="smsConsent"
+                  checked={formData.smsConsent}
+                  onChange={(e) => setFormData(prev => ({ ...prev, smsConsent: e.target.checked }))}
+                  className="mt-1"
+                />
+                <label htmlFor="smsConsent" className="text-sm text-gray-300">
+                  By submitting, you authorize FFE to send text messages with information related to your request. Message/data rates apply. 
+                  Consent is not a condition of purchase. See our{' '}
+                  <Link href="/terms" className="text-blue hover:text-blue-400 underline">
+                    terms and conditions
+                  </Link>.
+                </label>
               </div>
               
               <Button 
