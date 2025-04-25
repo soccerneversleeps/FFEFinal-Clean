@@ -9,17 +9,17 @@ export default function Logo({ size }: LogoProps = {}) {
   return (
     <Link 
       href="/" 
-      className={`flex items-center gap-2 text-lg md:text-2xl font-bold text-white hover:text-orange transition-colors whitespace-nowrap ${
+      className={`flex items-center gap-2 text-xl md:text-3xl font-bold text-white hover:text-orange transition-colors whitespace-nowrap ${
         size ? `text-[${size}px]` : ''
       }`}
     >
       <Image
         src="/images/partners/FullLogo_Transparent_NoBuffer (1).png"
         alt="Family First Energy Logo"
-        width={42}
-        height={42}
-        className="w-auto h-[1.5em]"
-        style={{ maxHeight: size ? `${size * 1.5}px` : '42px' }}
+        width={52}
+        height={52}
+        className="w-auto h-[2.25em]"
+        style={{ maxHeight: size ? `${size * 2.25}px` : '52px' }}
       />
       Family First Energy
     </Link>
