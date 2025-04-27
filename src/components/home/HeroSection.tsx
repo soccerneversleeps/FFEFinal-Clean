@@ -15,8 +15,7 @@ export default function HeroSection() {
           </h1>
         </div>
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl">
-          We help California utilities connect with residential and commercial customers to implement
-          energy-efficient solutions that save money and protect our environment.
+          We bridge community needs with utility goals, connecting California families and businesses to often-overlooked energy saving opportunities. Our comprehensive utility programs maximize available resources to create lasting impact for both communities and utilities.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <Button 

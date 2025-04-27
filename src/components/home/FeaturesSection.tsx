@@ -19,7 +19,7 @@ export default function FeaturesSection() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Outreach Assistance</h3>
               <p className="text-gray-300">
-                Family First Energy creates custom outreach strategies to help utilities, implementers, and contractors meet their contractual goals. With over 30 years of experience in utility program outreach, we drive engagement, increase participation, and ensure compliance. Partner with us to enhance your reach and maximize program success.
+                Family First Energy specializes in community program outreach across California Investor Owned Utilities' territories. Our proven experience with residential weatherization and commercial efficiency programs drives higher participation through trusted messenger strategies and human-centered design.
               </p>
             </div>
           </Link>
@@ -31,7 +31,7 @@ export default function FeaturesSection() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Direct Install</h3>
               <p className="text-gray-300">
-                Family First Energy delivers expert installation of energy efficiency measures with General B, C36, and C20 licenses. With over 20 years of experience, we handle everything from start to finish—staying ahead of new technologies, ensuring full compliance, and training our team to the highest standards. Partner with us for seamless, high-quality installations that meet every requirement.
+                Family First Energy excels in residential and commercial energy upgrades, with expertise in HVAC systems and efficiency retrofits. Our General B, C36, and C20 licensed team delivers comprehensive solutions while maintaining the highest standards in program implementation.
               </p>
             </div>
           </Link>
@@ -43,7 +43,7 @@ export default function FeaturesSection() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Program Design</h3>
               <p className="text-gray-300">
-                Family First Energy partners with utilities and implementers to develop high-impact, cost-effective programs that meet both energy and equity goals. We specialize in creating strategies for disadvantaged communities and hard-to-reach zones throughout California. Our expertise helps you design measurable programs that maximize efficiency while ensuring no community is left behind.
+                Family First Energy partners with utilities to design comprehensive residential and commercial programs with measurable results. Our experience across multiple utility territories informs solutions that accelerate implementation while maximizing program accessibility.
               </p>
             </div>
           </Link>
