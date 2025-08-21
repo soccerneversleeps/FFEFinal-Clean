@@ -254,6 +254,19 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+        
+        {/* Legal Footer */}
+        <div className="border-t border-gray-800 mt-16 pt-8 text-center">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-gray-400">
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="hidden sm:block">•</span>
+            <Link href="/terms" className="hover:text-white transition-colors">
+              Terms & Conditions
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

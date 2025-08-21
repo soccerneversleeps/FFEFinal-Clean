@@ -24,21 +24,20 @@ export default function CommercialSection() {
               <h2 className="text-3xl md:text-4xl font-bold">Commercial Solutions</h2>
             </div>
             <p className="text-lg text-gray-300">
-              We partner with businesses across California to implement energy-saving measures that improve the
-              bottom line and meet sustainability goals.
+              We partner with businesses across California to maximize utility program incentives and implement cost-effective energy solutions. From small retail to large industrial facilities, our team identifies and secures all available funding opportunities to improve your bottom line while advancing sustainability goals.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircle className="h-6 w-6 text-green mt-1 flex-shrink-0" />
-                <span>Commercial building energy audits and retrofits</span>
+                <span>Comprehensive facility assessments with ROI-driven recommendations</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="h-6 w-6 text-green mt-1 flex-shrink-0" />
-                <span>Custom energy management solutions</span>
+                <span>Zero out-of-pocket program options and maximum incentive capture</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="h-6 w-6 text-green mt-1 flex-shrink-0" />
-                <span>Utility incentive program coordination</span>
+                <span>End-to-end project management and utility program coordination</span>
               </li>
             </ul>
             <Button 

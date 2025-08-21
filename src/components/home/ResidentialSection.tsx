@@ -23,21 +23,20 @@ export default function ResidentialSection() {
             <h2 className="text-3xl md:text-4xl font-bold">Residential Solutions</h2>
           </div>
           <p className="text-lg text-gray-300">
-            We help California homeowners access utility programs that reduce energy costs and increase comfort
-            while contributing to a greener future.
+            We help California homeowners and rental property residents access no-cost and incentive-based utility programs, regardless of property size. Our team identifies and secures all available rebates and assistance programs to help reduce your energy costs while increasing comfort and contributing to a greener future.
           </p>
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
               <CheckCircle className="h-6 w-6 text-green mt-1 flex-shrink-0" />
-              <span>Home energy assessments and personalized efficiency plans</span>
+              <span>Free home energy assessments with personalized savings plans</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="h-6 w-6 text-green mt-1 flex-shrink-0" />
-              <span>Rebate and incentive program navigation</span>
+              <span>Access to no-cost programs and maximum available rebates</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="h-6 w-6 text-green mt-1 flex-shrink-0" />
-              <span>Smart home technology integration</span>
+              <span>Energy-saving upgrades and smart home technology installation</span>
             </li>
           </ul>
           <Button 
