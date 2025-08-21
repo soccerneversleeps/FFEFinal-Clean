@@ -196,11 +196,15 @@ export default function ContactPage() {
                   className="mt-1"
                 />
                 <label htmlFor="smsConsent" className="text-sm text-gray-300">
-                  By submitting, you authorize FFE to send text messages with information related to your request. Message/data rates apply. 
-                  Consent is not a condition of purchase. See our{' '}
+                  By submitting, you authorize FFE to send text messages and emails with information related to your request. You agree to our{' '}
+                  <Link href="/privacy" className="text-blue hover:text-blue-400 underline">
+                    Privacy Policy
+                  </Link>{' '}
+                  which states "Mobile information will not be shared with third parties for marketing/promotional purposes." 
+                  Message/data rates apply. Consent is not a condition of purchase. See our{' '}
                   <Link href="/terms" className="text-blue hover:text-blue-400 underline">
                     terms and conditions
-                  </Link>.
+                  </Link>. Reply STOP to opt-out.
                 </label>
               </div>
               
