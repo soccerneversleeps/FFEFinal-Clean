@@ -197,7 +197,7 @@ export default function ContactPage() {
                 />
                 <label htmlFor="smsConsent" className="text-sm text-gray-300">
                   By submitting, you authorize FFE to send text messages and emails with information related to your request. You agree to our{' '}
-                  <Link href="/privacy" className="text-blue hover:text-blue-400 underline">
+                  <Link href="/privacy-policy" className="text-blue hover:text-blue-400 underline">
                     Privacy Policy
                   </Link>{' '}
                   which states "Mobile information will not be shared with third parties for marketing/promotional purposes." 
@@ -262,7 +262,7 @@ export default function ContactPage() {
         {/* Legal Footer */}
         <div className="border-t border-gray-800 mt-16 pt-8 text-center">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-gray-400">
-            <Link href="/privacy" className="hover:text-white transition-colors">
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
             <span className="hidden sm:block">•</span>

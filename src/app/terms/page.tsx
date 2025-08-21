@@ -70,7 +70,7 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold text-white mb-4">Related Legal Documents</h2>
               <p>
                 For more information about how we handle your data, please also review our{" "}
-                <Link href="/privacy" className="text-orange hover:text-orange/90 transition-colors underline">
+                <Link href="/privacy-policy" className="text-orange hover:text-orange/90 transition-colors underline">
                   Privacy Policy
                 </Link>.
               </p>

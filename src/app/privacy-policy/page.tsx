@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
-export default function PrivacyPage() {
+export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-navy text-white">
       <div className="container mx-auto px-4 py-12">
